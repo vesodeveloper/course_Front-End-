@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Съобщения</title>    
+<meta charset="UTF-8">
+</head> 
+<body>
+<h1>Съобщения</h1> 
+ <form method="POST" id="form1" action="contacts.php">
+ <label for="name">Име:</label>  
+ <input type="text" name="nm" id="name" ></br>
+ <label for="sname">Фамилия:</label> 
+<input type="text" name="snm" id="sname"></br>
+ <label for="em">E-mail:</label> 
+ <input type="email" name="email" id="em"></br>
+ <label for="msg">Съобщениe:</label> 
+ <textarea id="msg" name="mess"></textarea></br>
+ <input type="submit" value="Потвърди">
+ </form>  
+ <style>
+ body{ background-color: aqua; width: 100%; height: 100%;}
+ #form1{padding: 20px;}
+ </style>
+</body>
+<script>
+ var nm=document.getElementById("name");
+ var sname=document.getElementById("sname");
+ var em=document.getElementById("em");
+ var msg=document.getElementById("msg");
+ var sub=document.getElementById("sub");
+ sub.style.backgroundColor="red";
+ nm.addEventListener("click",function(){
+nm.style.color="grey";
+ });
+ sname.addEventListener("click",function(){
+sname.style.color="yellow";
+ });
+ em.addEventListener("click",function(){
+em.style.color="blue";
+ });
+ msg.addEventListener("click",function(){
+msg.style.color="orange";
+ });
+ sub.addEventListener("click",function(){
+sub.style.color="green";
+ });
+ </script>   
+</html>
