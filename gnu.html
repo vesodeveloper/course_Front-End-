@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GNU</title>    
+</head>
+<body>
+        <header id="hd" class="header-container">
+          <h1><a href="index.html"><i>Изберете Линукс, изберете сигурността и стабилността която дава</i></h1></a>
+        </header>
+    <div class="content-container">
+<h1>Какво е GNU?</h1>
+<img src="photos/stallman.jpg" id="lin1">
+<img src="photos/gnu.png" id="lin2">
+<img src="photos/images.png" id="lin3">
+
+<article>
+    <i>
+            GNU e фамилия UNIX-базирани операционни системи с отворен код. </br>
+            Създаден от д-р Ричард Столман 1983 г.Той създава свободната операционна система GNU и софтуер към нея.  </i></br>
+
+</article></div>
+<footer id="ft" class="footer-container">
+        <table>
+          <tr>
+            <td>
+              <div>
+                <b><i>Потърсете ме в Facebook </i></b></br>
+              <a href="https://www.facebook.com/vesodeveloper"> <img src="photos/fb.png" id="img1"></a>
+           </div> </td>
+            <td>
+              <div>
+                <b><i>Потърсете ме в Instagram </i></b></br>
+              <a href="https://www.instagram.com/veso_jobs/"><img src="photos/insta.png" id="img2"></a>
+           </div> </td>
+            <td>
+              <div>
+                <b><i>Потърсете ме в Skype</i></b></br>
+              <a href=""><img src="photos/skype.png" id="img3"></a>
+           </div> </td>
+            <td>
+              <b>Абонирайте се за бюлетина</b></br>
+              <form method="post" id="f1" action="email.php">
+              <input type="email" value="Въведете вашият email" name="em"></br>
+              <input type="submit" value="Изпрати" id="sub" >
+              </form>
+            </td>
+          </tr>
+        </table>    
+        </footer>
+        <style>
+        body{ background-color: aqua; width: 100%; height: 100%;}
+        #ft{background-color: #964e70; width: auto; height: auto; padding: auto;
+margin: 0 5px; border-radius: 0 5px;}
+#hd{ background-color: #67d5d4;}
+        </style>
+        <script>
+        var lin1=document.getElementById("lin1");
+        var lin2=document.getElementById("lin2");
+        var lin3=document.getElementById("lin3");
+        lin1.addEventListener("mouseover",function(){
+          lin1.style.width="500px";
+          lin1.style.height="500px";
+        });
+        lin1.addEventListener("mouseout",function(){
+          lin1.style.width="300px";
+          lin1.style.height="300px";
+        });
+        lin2.addEventListener("mouseover",function(){
+          lin2.style.width="500px";
+          lin2.style.height="500px";
+        });
+        lin2.addEventListener("mouseout",function(){
+          lin2.style.width="300px";
+          lin2.style.height="300px";
+        });
+        lin3.addEventListener("mouseover",function(){
+          lin3.style.width="500px";
+          lin3.style.height="500px";
+        });
+        lin3.addEventListener("mouseout",function(){
+          lin3.style.width="300px";
+          lin3.style.height="300px";
+        });
+        
+        
+        </script>
+</body>    
+</html>
